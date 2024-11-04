@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><!-- activity_main_linear.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Títol de l'activitat -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- EditText per Nom -->
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/etCognom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cognom"
+        android:layout_below="@id/etNom"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/etEdat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Edat"
+        android:layout_below="@id/etCognom"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/etUsuari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuari"
+        android:layout_below="@id/etEdat"
+        android:layout_marginTop="8dp" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/etUsuari"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_below="@id/etPassword"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnCanviActivitat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Canvi de Activitat"
+        android:layout_below="@id/btnEnviar"
+        android:layout_marginTop="8dp" />
+</RelativeLayout>
